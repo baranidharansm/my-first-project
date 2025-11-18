@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduLearn - Your Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <div class="logo">EduLearn</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="navbar-extra">
+                <div class="user-profile">
+                    <span class="profile-icon">👤</span>
+                    <span class="profile-text">Profile</span>
+                </div>
+                <div class="search-box">
+                    <input type="text" placeholder="Search courses..." class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+                <button class="notification-btn">🔔 <span class="badge">3</span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to EduLearn</h1>
+            <p>Learn anything, anytime, anywhere</p>
+            <button class="btn btn-primary" onclick="scrollToSection('courses')">Explore Courses</button>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>Our Popular Courses</h2>
+            <div class="course-grid">
+                <div class="course-card">
+                    <div class="course-icon">📚</div>
+                    <h3>Web Development</h3>
+                    <p>Learn HTML, CSS, and JavaScript to build amazing websites.</p>
+                    <button class="btn btn-secondary" onclick="enrollCourse('Web Development')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🐍</div>
+                    <h3>Python Programming</h3>
+                    <p>Master Python and become a skilled programmer.</p>
+                    <button class="btn btn-secondary" onclick="enrollCourse('Python Programming')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">🎨</div>
+                    <h3>UI/UX Design</h3>
+                    <p>Create beautiful and user-friendly interfaces.</p>
+                    <button class="btn btn-secondary" onclick="enrollCourse('UI/UX Design')">Enroll Now</button>
+                </div>
+                <div class="course-card">
+                    <div class="course-icon">📊</div>
+                    <h3>Data Science</h3>
+                    <p>Learn data analysis and machine learning basics.</p>
+                    <button class="btn btn-secondary" onclick="enrollCourse('Data Science')">Enroll Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>EduLearn is dedicated to providing high-quality education accessible to everyone. Our expert instructors and comprehensive courses help you achieve your learning goals.</p>
+            <div class="stats">
+                <div class="stat">
+                    <h3>50K+</h3>
+                    <p>Students</p>
+                </div>
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Courses</p>
+                </div>
+                <div class="stat">
+                    <h3>500+</h3>
+                    <p>Instructors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <form class="contact-form" onsubmit="handleFormSubmit(event)">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 EduLearn. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
